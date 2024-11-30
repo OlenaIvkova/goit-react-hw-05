@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.goBack {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #6200ea;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.goBack:hover {
+  background-color: #3700b3;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.poster {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.additionalInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additionalInfo ul li a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+.additionalInfo ul li a:hover {
+  color: #3700b3;
+}

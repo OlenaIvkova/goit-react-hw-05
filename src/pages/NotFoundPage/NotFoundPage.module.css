@@ -1,0 +1,27 @@
+.notFoundContainer {
+  text-align: center;
+  padding: 50px;
+}
+
+.notFoundTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.notFoundMessage {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.goHomeLink {
+  text-decoration: none;
+  color: #6200ea;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.goHomeLink:hover {
+  color: #3700b3;
+}
