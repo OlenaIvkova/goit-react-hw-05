@@ -32,10 +32,11 @@ function MovieDetailsPage() {
 
   return (
     <div className={styles.movieDetailsContainer}>
-      {}
-      <button className={styles.goBackButton} onClick={() => navigate(-1)}>
+      { }
+       <button className={styles.goBackButton} onClick={() => navigate('/')}>Go Back</button>
+      {/* <button className={styles.goBackButton} onClick={() => navigate(-1)}>
         Go Back
-      </button>
+      </button> */}
 
       <div className={styles.movieDetails}>
         {}
