@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-// import styles from './MovieReviews.module.css';
+import styles from './MovieReviews.module.css';
 
 function MovieReviews() {
   const [reviews, setReviews] = useState([]);
@@ -28,13 +28,13 @@ function MovieReviews() {
   }, [movieId]);
 
   return (
-    <div>
+    <div className={styles.reviewsContainer}>
       <h3>Reviews</h3>
       {reviews.length > 0 ? (
         reviews.map(review => (
-          <div key={review.id}>
-            <p>{review.author}</p>
-            <p>{review.content}</p>
+          <div key={review.id} className={styles.reviewItem}>
+            <p className={styles.author}>Author: {review.author}</p>
+            <p className={styles.content}>{review.content}</p>
           </div>
         ))
       ) : (

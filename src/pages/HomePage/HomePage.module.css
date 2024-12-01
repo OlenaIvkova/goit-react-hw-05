@@ -1,10 +1,45 @@
-.homeContainer {
+.homePageContainer {
   padding: 20px;
+  background-color: #f0f0f0;
+  min-height: 100vh;
 }
 
-.homeTitle {
-  font-size: 24px;
-  font-weight: bold;
+.title {
+  font-size: 2rem;
+  text-align: center;
   margin-bottom: 20px;
+  color: #333;
+}
+
+.movieListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movieCard {
+  width: 200px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+
+.moviePoster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movieTitle {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
   color: #333;
 }

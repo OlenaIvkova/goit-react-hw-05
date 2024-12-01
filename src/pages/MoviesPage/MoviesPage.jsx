@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import MovieList from '../../components/MovieList/MovieList';
 import axios from 'axios';
+import styles from './MoviesPage.module.css';
 
 
 const MoviesPage = () => {
@@ -27,15 +28,18 @@ const MoviesPage = () => {
   return (
     <div>
       <h1>Search Movies</h1>
-      <form onSubmit={handleSearch}>
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search movies..."
-        />
-        <button type="submit">Search</button>
-      </form>
+      <form className={styles.searchForm} onSubmit={handleSearch}>
+  <input
+    className={styles.searchInput}
+    type="text"
+    placeholder="Search movies"
+    value={query}
+    onChange={e => setQuery(e.target.value)}
+  />
+  <button className={styles.searchButton} type="submit">
+    Search
+  </button>
+</form>
       <MovieList movies={movies} />
     </div>
   );
