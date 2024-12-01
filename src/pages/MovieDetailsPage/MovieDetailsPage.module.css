@@ -51,7 +51,7 @@
 .tabButtons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -64,6 +64,7 @@
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
+  margin-right: 10px;
 }
 
 .tabButton:hover {
